@@ -37,10 +37,11 @@
                         <b>Hello, I'm Jiahao Ma</b>
                     </h1>
                     <div class="content has-text-justified">
-                        <p>I am a third-year PhD student in Computer Science at <a href="https://grail.cs.washington.edu/">Australian National University</a> where I am advised by <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
-                        <a href="https://people.csiro.au/a/d/david-ahmedtaristizabal">David Ahmedt Aristizabal</a> and <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a>. Before that, 
-                        I received my Master of Philosophy degree supervised by <a href="https://zheng-lab.cecs.anu.edu.au/">Liang Zheng</a> from Australian National University in 2023. 
-                        My current research interest lies in 3D reconstruction and novel view synthesis.</p>
+                        <p>I am a third-year PhD student in Computer Science at <a href="https://www.anu.edu.au/">Australian National University</a> where I am advised by <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
+                        <a href="https://people.csiro.au/a/d/david-ahmedtaristizabal">David Ahmedt-Aristizabal</a> and <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a>. Before that, 
+                        I received my Master of Philosophy degree supervised by <a href="https://zheng-lab.cecs.anu.edu.au/">Liang Zheng</a> from Australian National University in 2023.
+                        I am currently a research intern at <a href="https://x-humanoid.com/">X-Humanoid</a>, working closely with <a href="https://github.com/jonyzhang2023">Jony Zhang</a>.
+                        My research interests include control &amp; planning in robotics, reinforcement learning, vision perception, and 3D reconstruction.</p>
 
                         <div class="buttons">
                             <a class="external-link button is-light" href="https://scholar.google.com/citations?user=IMr-5akAAAAJ&hl=zh-CN">
@@ -68,8 +69,240 @@
     <section class="section">
         <div class="container is-max-desktop">
             <h2 class="title is-3">Selected Publications </h2>
+
+            <div class="pub-filter buttons" style="margin-bottom: 1.5rem;">
+                <button class="button is-rounded pub-filter-btn is-active" data-filter="all">All</button>
+                <button class="button is-rounded pub-filter-btn" data-filter="robotics">Control & Planning in Robotics, RL</button>
+                <button class="button is-rounded pub-filter-btn" data-filter="vision">Vision Perception, 3D Reconstruction</button>
+            </div>
+
+
+            <div class="publication-block columns" data-category="robotics">
+                <div class="column is-3">
+                    <video width="100%" height="100%" autoplay muted loop playsinline>
+                        <source src="figures/flowop_cover.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <h3 class="publication-title"><a href="https://flowop-submission.github.io/">FlowOp: Morphology-Agnostic Animation-to-Robot Motion Retargeting via Sceneflow-Conditioned Diffusion</a></h3>
+                        <div class="publication-authors">
+                            <span class="author-block">
+                                Zeyu Gao,
+                            </span>
+                            <span class="author-block">
+                                Zeran Su,
+                            </span>
+                            <span class="author-block">
+                                Peiran Liu,
+                            </span>
+                            <span class="author-block">
+                                Zicheng Duan,
+                            </span>
+                            <span class="author-block">
+                                Zelin Tao,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://github.com/jonyzhang2023">Qiang Zhang</a>,
+                            </span>
+                            <span class="author-block author-me">
+                                <a href="https://jiahao-ma.github.io/">Jiahao Ma<sup>†</sup></a>
+                            </span>
+                        </div>
+                        <div class="publication-venue">
+                            <span>arXiv, 2026</span>
+                        </div>
+                        <p class="publication-description">FlowOp uses sceneflow-conditioned diffusion to retarget arbitrary animation character motions to humanoid robots without body correspondence.</p>
+                        <div class="publication-links buttons field has-addons">
+                            <a class="external-link button is-small is-ghost" href="https://flowop-submission.github.io/">
+                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                                <span>Project Page</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-block columns" data-category="robotics">
+                <div class="column is-3">
+                    <video width="100%" height="100%" autoplay muted loop playsinline>
+                        <source src="figures/robotpan_cover.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <h3 class="publication-title"><a href="https://robotpan.github.io/">RobotPan: A 360° Surround-View Robotic Vision System for Embodied Perception</a></h3>
+                        <div class="publication-authors">
+                            <span class="author-block author-me">
+                                <a href="https://jiahao-ma.github.io/">Jiahao Ma*</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://github.com/jonyzhang2023">Qiang Zhang*</a>,
+                            </span>
+                            <span class="author-block team-toggle">X-Humanoid Team <i class="fas fa-caret-down"></i></span>
+                            <span class="team-authors" style="display:none;">
+                                <span class="author-block">Peiran Liu,</span>
+                                <span class="author-block">Zeran Su,</span>
+                                <span class="author-block">Pihai Sun,</span>
+                                <span class="author-block">Gang Han,</span>
+                                <span class="author-block">Wen Zhao,</span>
+                                <span class="author-block">Wei Cui,</span>
+                                <span class="author-block">Zhang Zhang,</span>
+                                <span class="author-block">Zhiyuan Xu,</span>
+                                <span class="author-block">Renjing Xu,</span>
+                                <span class="author-block">Jian Tang,</span>
+                                <span class="author-block"><a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,</span>
+                                <span class="author-block">Yijie Guo</span>
+                            </span>
+                        </div>
+                        <div class="publication-venue">
+                            <span>arXiv, 2026</span>
+                        </div>
+                        <p class="publication-description">RobotPan predicts metric-scaled compact 3D Gaussians from sparse surround-view inputs for real-time 360° rendering and reconstruction on humanoid robots.</p>
+                        <div class="publication-links buttons field has-addons">
+                            <a class="external-link button is-small is-ghost" href="https://robotpan.github.io/">
+                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                                <span>Project Page</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/2604.13476">
+                                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                <span>Paper</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/2604.13476">
+                                <span class="icon"><i class="fas fa-book"></i></span>
+                                <span>arXiv</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-block columns" data-category="robotics">
+                <div class="column is-3">
+                    <video width="100%" height="100%" autoplay muted loop playsinline>
+                        <source src="figures/heracles_cover.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <h3 class="publication-title"><a href="https://heracles-humanoid-control.github.io/">Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control</a></h3>
+                        <div class="publication-authors">
+                            <span class="author-block team-toggle">X-Humanoid Team <i class="fas fa-caret-down"></i></span>
+                            <span class="team-authors" style="display:none;">
+                                <span class="author-block">Zelin Tao*,</span>
+                                <span class="author-block">Zeran Su*,</span>
+                                <span class="author-block">Peiran Liu,</span>
+                                <span class="author-block">Jingkai Sun,</span>
+                                <span class="author-block">Wenqiang Que,</span>
+                                <span class="author-block author-me"><a href="https://jiahao-ma.github.io/">Jiahao Ma</a>,</span>
+                                <span class="author-block">Jialin Yu,</span>
+                                <span class="author-block">Jiahang Cao,</span>
+                                <span class="author-block">Pihai Sun,</span>
+                                <span class="author-block">Gang Han,</span>
+                                <span class="author-block">Zhiyuan Xu,</span>
+                                <span class="author-block">Jian Tang,</span>
+                                <span class="author-block"><a href="https://github.com/jonyzhang2023">Qiang Zhang</a>,</span>
+                                <span class="author-block">Yijie Guo</span>
+                            </span>
+                        </div>
+                        <div class="publication-venue">
+                            <span>arXiv, 2026</span>
+                        </div>
+                        <p class="publication-description">Heracles is a state-conditioned diffusion middleware that bridges precise motion tracking and generative synthesis for general-purpose humanoid control.</p>
+                        <div class="publication-links buttons field has-addons">
+                            <a class="external-link button is-small is-ghost" href="https://heracles-humanoid-control.github.io/">
+                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                                <span>Project Page</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/2603.27756">
+                                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                <span>Paper</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/2603.27756">
+                                <span class="icon"><i class="fas fa-book"></i></span>
+                                <span>arXiv</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-block columns" data-category="robotics">
+                <div class="column is-3">
+                    <video width="100%" height="100%" autoplay muted loop playsinline>
+                        <source src="figures/meshmimic_cover.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <h3 class="publication-title"><a href="https://meshmimic.github.io/">MeshMimic: Geometry-Aware Humanoid Motion Learning through 3D Scene Reconstruction</a></h3>
+                        <div class="publication-authors">
+                            <span class="author-block">
+                                <a href="https://github.com/jonyzhang2023">Qiang Zhang*</a>,
+                            </span>
+                            <span class="author-block author-me">
+                                <a href="https://jiahao-ma.github.io/">Jiahao Ma*</a>,
+                            </span>
+                            <span class="author-block">
+                                Peiran Liu*,
+                            </span>
+                            <span class="author-block">
+                                Shuai Shi*,
+                            </span>
+                            <span class="author-block team-toggle">X-Humanoid Team <i class="fas fa-caret-down"></i></span>
+                            <span class="team-authors" style="display:none;">
+                                <span class="author-block">Zeran Su,</span>
+                                <span class="author-block">Zifan Wang,</span>
+                                <span class="author-block">Jingkai Sun,</span>
+                                <span class="author-block">Wei Cui,</span>
+                                <span class="author-block">Jialin Yu,</span>
+                                <span class="author-block">Gang Han,</span>
+                                <span class="author-block">Wen Zhao,</span>
+                                <span class="author-block">Pihai Sun,</span>
+                                <span class="author-block">Kangning Yin,</span>
+                                <span class="author-block">Jiaxu Wang,</span>
+                                <span class="author-block">Jiahang Cao,</span>
+                                <span class="author-block">Lingfeng Zhang,</span>
+                                <span class="author-block">Hao Cheng,</span>
+                                <span class="author-block">Xiaoshuai Hao,</span>
+                                <span class="author-block">Yiding Ji,</span>
+                                <span class="author-block">Junwei Liang,</span>
+                                <span class="author-block">Jian Tang,</span>
+                                <span class="author-block">Renjing Xu,</span>
+                                <span class="author-block">Yijie Guo</span>
+                            </span>
+                        </div>
+                        <div class="publication-venue">
+                            <span>arXiv, 2026</span>
+                        </div>
+                        <p class="publication-description">MeshMimic bridges 3D scene reconstruction and embodied intelligence to enable humanoid robots to learn coupled motion-terrain interactions directly from monocular video.</p>
+                        <div class="publication-links buttons field has-addons">
+                            <a class="external-link button is-small is-ghost" href="https://meshmimic.github.io/">
+                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                                <span>Project Page</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/2602.15733">
+                                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                <span>Paper</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/2602.15733">
+                                <span class="icon"><i class="fas fa-book"></i></span>
+                                <span>arXiv</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             
-            <div class="publication-block columns">
+
+            <hr class="pub-divider">
+            
+            <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
                     <img alt="Uncertainty-aware 3D Edge Reconstruction with Difference of Gaussians" src="figures\Difference_of_Gaussians.jpg">
                 </div>
@@ -113,96 +346,7 @@
                 </div>
             </div>
 
-            <div class="publication-block columns">
-                <div class="column is-2">
-                    <img alt="Puzzles: Unbounded Video-Depth Augmentation for Scalable End-to-End 3D Reconstruction" src="./figures/Puzzles.jpg">
-                </div>
-
-                <div class="column">
-                    <div class="content">
-                        <h3 class="publication-title"><a href="https://jiahao-ma.github.io/puzzles/">Puzzles: Unbounded Video-Depth Augmentation for Scalable End-to-End 3D Reconstruction</a></h3>
-                        <div class="publication-authors">
-                            <span class="author-block author-me">
-                                <a href="https://jiahao-ma.github.io/">Jiahao Ma</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://leiwangr.github.io/">Lei Wang</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://people.csiro.au/a/d/david-ahmedtaristizabal">David Ahmedt-Aristizabal</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a>
-                            </span>
-                        </div>
-                        <div class="publication-venue">
-                            <span>NeurIPS, 2025</span>
-                            <!-- <span>Arxiv preprint</span> -->
-                        </div>
-                        <p class="publication-description">Puzzles generates novel views and camera paths from a single image or video clips.</p>
-                        <div class="publication-links buttons field has-addons">
-                            <a class="external-link button is-small is-ghost" href="https://jiahao-ma.github.io/puzzles/">
-                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                                <span>Project Page</span>
-                            </a>
-                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/2506.23863">
-                                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                                <span>Paper</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="publication-block columns">
-                <div class="column is-2">
-                    <img alt="SOAF: Scene Occlusion-aware Neural Acoustic Field" src="./figures/DCHM.jpg">
-                </div>
-
-                <div class="column">
-                    <div class="content">
-                        <h3 class="publication-title"><a href="https://jiahao-ma.github.io/DCHM/">DCHM: Depth-Consistent Human Modeling for Multiview Detection</a></h3>
-                        <div class="publication-authors">
-                            <span class="author-block author-me">
-                                <a href="https://jiahao-ma.github.io/">Jiahao Ma</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://scholar.google.com/citations?user=OfOGvmUAAAAJ&hl=en">Tianyu Wang</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://people.csiro.au/a/d/david-ahmedtaristizabal">David Ahmedt-Aristizabal</a>,
-                            </span>
-                            <span class="author-block">
-                                <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a>
-                            </span>
-                        </div>
-                        <div class="publication-venue">
-                            <span>ICCV, 2025</span>
-                            <!-- <span>Arxiv preprint</span> -->
-                        </div>
-                        <p class="publication-description">DCHM leverages superpixel GS to generate consistent point clouds for label-free multiview detection.</p>
-                        <div class="publication-links buttons field has-addons">
-                            <a class="external-link button is-small is-ghost" href="https://jiahao-ma.github.io/DCHM/">
-                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                                <span>Project Page</span>
-                            </a>
-                            <a class="external-link button is-small is-ghost" href="">
-                                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                                <span>Paper</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="publication-block columns">
+            <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
                     <img alt="SOAF: Scene Occlusion-aware Neural Acoustic Field" src="./figures/SOAF.jpg">
                 </div>
@@ -246,8 +390,98 @@
                 </div>
 
             </div>
+
+            <div class="publication-block columns" data-category="vision">
+                <div class="column is-2">
+                    <img alt="Puzzles: Unbounded Video-Depth Augmentation for Scalable End-to-End 3D Reconstruction" src="./figures/Puzzles.jpg">
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <h3 class="publication-title"><a href="https://jiahao-ma.github.io/puzzles/">Puzzles: Unbounded Video-Depth Augmentation for Scalable End-to-End 3D Reconstruction</a></h3>
+                        <div class="publication-authors">
+                            <span class="author-block author-me">
+                                <a href="https://jiahao-ma.github.io/">Jiahao Ma</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://leiwangr.github.io/">Lei Wang</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://people.csiro.au/a/d/david-ahmedtaristizabal">David Ahmedt-Aristizabal</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a>
+                            </span>
+                        </div>
+                        <div class="publication-venue">
+                            <span>NeurIPS, 2025</span>
+                            <!-- <span>Arxiv preprint</span> -->
+                        </div>
+                        <p class="publication-description">Puzzles generates novel views and camera paths from a single image or video clips.</p>
+                        <div class="publication-links buttons field has-addons">
+                            <a class="external-link button is-small is-ghost" href="https://jiahao-ma.github.io/puzzles/">
+                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                                <span>Project Page</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/2506.23863">
+                                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                <span>Paper</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-block columns" data-category="vision">
+                <div class="column is-2">
+                    <img alt="DCHM Depth-Consistent Human Modeling for Multiview Detection" src="./figures/DCHM.jpg">
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <h3 class="publication-title"><a href="https://jiahao-ma.github.io/DCHM/">DCHM: Depth-Consistent Human Modeling for Multiview Detection</a></h3>
+                        <div class="publication-authors">
+                            <span class="author-block author-me">
+                                <a href="https://jiahao-ma.github.io/">Jiahao Ma</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=OfOGvmUAAAAJ&hl=en">Tianyu Wang</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://people.csiro.au/a/d/david-ahmedtaristizabal">David Ahmedt-Aristizabal</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a>
+                            </span>
+                        </div>
+                        <div class="publication-venue">
+                            <span>ICCV, 2025</span>
+                            <!-- <span>Arxiv preprint</span> -->
+                        </div>
+                        <p class="publication-description">DCHM leverages superpixel GS to generate consistent point clouds for label-free multiview detection.</p>
+                        <div class="publication-links buttons field has-addons">
+                            <a class="external-link button is-small is-ghost" href="https://jiahao-ma.github.io/DCHM/">
+                                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                                <span>Project Page</span>
+                            </a>
+                            <a class="external-link button is-small is-ghost" href="">
+                                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                <span>Paper</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             
-            <div class="publication-block columns">
+            <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
                     <img alt="HashPoint: Accelerated Point Searching and Sampling for Neural Rendering" src="./figures/h3.jpg">
                 </div>
@@ -290,7 +524,7 @@
 
             </div>
 
-            <div class="publication-block columns">
+            <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
                     <img alt="Multiview Detection with Cardboard Human Modeling" src="./figures/MvCHM.png">
                 </div>
@@ -331,7 +565,7 @@
                 </div>
             </div>
 
-            <div class="publication-block columns">
+            <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
                     <img alt="Voxelized 3D Feature Aggregation for Multiview Detection" src="./figures/vfa1.jpg">
                 </div>
@@ -378,7 +612,7 @@
                     </div>
                 </div>
             </div>
-            <p class="publication-description"> <strong>*</strong> denotes equal contribution.</p>
+            <p class="publication-description"> <strong>*</strong> denotes equal contribution, <strong>†</strong> denotes corresponding author.</p>
 
         </div>
     </section>
