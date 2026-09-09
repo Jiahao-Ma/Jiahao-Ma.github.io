@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $('.publication-mousecell').mouseover(function() {
         $(this).find('video').css('display', 'inline-block');
@@ -39,3 +38,36 @@ $(document).ready(function() {
         }
     });
 })
+
+// Lazy-load videos: only set the source when the video scrolls near the viewport.
+// Sources use data-src instead of src so the browser doesn't fetch them upfront.
+(function () {
+    function loadVideo(video) {
+        var source = video.querySelector('source[data-src]');
+        if (source && !source.src) {
+            source.src = source.getAttribute('data-src');
+            video.load();
+        }
+    }
+
+    var lazyVideos = Array.prototype.slice.call(
+        document.querySelectorAll('video source[data-src]')
+    ).map(function (source) { return source.closest('video'); });
+
+    if (!lazyVideos.length) return;
+
+    if ('IntersectionObserver' in window) {
+        var videoObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    loadVideo(entry.target);
+                }
+            });
+        }, { rootMargin: '300px' });
+
+        lazyVideos.forEach(function (video) { videoObserver.observe(video); });
+    } else {
+        // Fallback for very old browsers: load everything immediately.
+        lazyVideos.forEach(loadVideo);
+    }
+})();
