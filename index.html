@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-US" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Jiahao Ma</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFWSBLRKG0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-MFWSBLRKG0');
+        // Load gtag.js only after the page has finished loading: on networks where Google is
+        // unreachable this keeps a hanging connection from holding the load event for ~30s.
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MFWSBLRKG0';
+            document.head.appendChild(s);
+        });
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
-    <link href="src/index.css?v=20260517" rel="stylesheet">
+    <link href="src/index.css?v=20260910" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="src/index.js?v=20260909"></script>
+    <script defer src="src/index.js?v=20260911"></script>
 </head>
 
 <body>
@@ -29,7 +35,7 @@
             <div class="columns is-vcentered">
                 <div class="column is-4">
                     <div class="portrait">
-                        <img src="figures/JiahaoMa.jpg" alt="Jiahao Ma">
+                        <img src="figures/thumbs/JiahaoMa.jpg" alt="Jiahao Ma" width="700" height="700" fetchpriority="high" decoding="async">
                     </div>
                 </div>
                 <div class="column">
@@ -80,7 +86,7 @@
             <div class="publication-block columns" data-category="robotics">
                 <div class="column is-3">
                     <video width="100%" height="100%" autoplay muted loop playsinline preload="none">
-                        <source data-src="figures/solo_cover.mp4" type="video/mp4">
+                        <source data-src="figures/preview/solo_cover.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -170,7 +176,7 @@
             <div class="publication-block columns" data-category="robotics">
                 <div class="column is-3">
                     <video width="100%" height="100%" autoplay muted loop playsinline preload="none">
-                        <source data-src="figures/flowop_cover.mp4" type="video/mp4">
+                        <source data-src="figures/preview/flowop_cover.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -217,7 +223,7 @@
             <div class="publication-block columns" data-category="robotics">
                 <div class="column is-3">
                     <video width="100%" height="100%" autoplay muted loop playsinline preload="none">
-                        <source data-src="figures/robotpan_cover.mp4" type="video/mp4">
+                        <source data-src="figures/preview/robotpan_cover.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -272,7 +278,7 @@
             <div class="publication-block columns" data-category="robotics">
                 <div class="column is-3">
                     <video width="100%" height="100%" autoplay muted loop playsinline preload="none">
-                        <source data-src="figures/heracles_cover.mp4" type="video/mp4">
+                        <source data-src="figures/preview/heracles_cover.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -323,7 +329,7 @@
             <div class="publication-block columns" data-category="robotics">
                 <div class="column is-3">
                     <video width="100%" height="100%" autoplay muted loop playsinline preload="none">
-                        <source data-src="figures/meshmimic_cover.mp4" type="video/mp4">
+                        <source data-src="figures/preview/meshmimic_cover.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -394,7 +400,7 @@
             
             <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
-                    <img alt="Uncertainty-aware 3D Edge Reconstruction with Difference of Gaussians" src="figures/Difference_of_Gaussians.jpg">
+                    <img alt="Uncertainty-aware 3D Edge Reconstruction with Difference of Gaussians" src="figures/thumbs/Difference_of_Gaussians.jpg" width="600" height="592" loading="lazy" decoding="async">
                 </div>
 
                 <div class="column">
@@ -438,7 +444,7 @@
 
             <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
-                    <img alt="SOAF: Scene Occlusion-aware Neural Acoustic Field" src="./figures/SOAF.jpg">
+                    <img alt="SOAF: Scene Occlusion-aware Neural Acoustic Field" src="figures/thumbs/SOAF.jpg" width="600" height="598" loading="lazy" decoding="async">
                 </div>
 
                 <div class="column">
@@ -483,7 +489,7 @@
 
             <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
-                    <img alt="Puzzles: Unbounded Video-Depth Augmentation for Scalable End-to-End 3D Reconstruction" src="./figures/Puzzles.jpg">
+                    <img alt="Puzzles: Unbounded Video-Depth Augmentation for Scalable End-to-End 3D Reconstruction" src="figures/thumbs/Puzzles.jpg" width="600" height="598" loading="lazy" decoding="async">
                 </div>
 
                 <div class="column">
@@ -527,7 +533,7 @@
 
             <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
-                    <img alt="DCHM Depth-Consistent Human Modeling for Multiview Detection" src="./figures/DCHM.jpg">
+                    <img alt="DCHM Depth-Consistent Human Modeling for Multiview Detection" src="figures/thumbs/DCHM.jpg" width="600" height="602" loading="lazy" decoding="async">
                 </div>
 
                 <div class="column">
@@ -573,7 +579,7 @@
             
             <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
-                    <img alt="HashPoint: Accelerated Point Searching and Sampling for Neural Rendering" src="./figures/h3.jpg">
+                    <img alt="HashPoint: Accelerated Point Searching and Sampling for Neural Rendering" src="figures/thumbs/h3.jpg" width="600" height="586" loading="lazy" decoding="async">
                 </div>
 
                 <div class="column">
@@ -616,7 +622,7 @@
 
             <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
-                    <img alt="Multiview Detection with Cardboard Human Modeling" src="./figures/MvCHM.png">
+                    <img alt="Multiview Detection with Cardboard Human Modeling" src="figures/thumbs/MvCHM.jpg" width="600" height="602" loading="lazy" decoding="async">
                 </div>
     
                 <div class="column">
@@ -657,7 +663,7 @@
 
             <div class="publication-block columns" data-category="vision">
                 <div class="column is-2">
-                    <img alt="Voxelized 3D Feature Aggregation for Multiview Detection" src="./figures/vfa1.jpg">
+                    <img alt="Voxelized 3D Feature Aggregation for Multiview Detection" src="figures/thumbs/vfa1.jpg" width="600" height="680" loading="lazy" decoding="async">
                 </div>
     
                 <div class="column">
@@ -713,7 +719,7 @@
             <div class="publication-block columns">
                 <div class="column is-4">  <!-- Adjust this value for larger image column -->
                     <video width="100%" height="100%" autoplay muted loop playsinline preload="none">
-                        <source data-src="figures/MultiviewC.mp4" type="video/mp4">
+                        <source data-src="figures/preview/MultiviewC.mp4" type="video/mp4">
                     </video>
                 </div>                
                 <div class="column is-8">
@@ -767,7 +773,7 @@
             <div class="publication-block columns">
                 <div class="column is-4">
                     <video width="100%" height="100%" autoplay muted loop playsinline preload="none">
-                        <source data-src="figures/humanoidocc.mp4" type="video/mp4">
+                        <source data-src="figures/preview/humanoidocc.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
